@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "O kalkulatorze";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <h2>Kalkulator BMR</h2>
+    (Basal Metabolic Rate) [kcal/24h]
+    W swojej podstawowej formie kalkulator pozwala obliczyć minimalne dzienne zapotrzebowanie kaloryczne organizmu -
+    czyli ilość kalorii, jaką ludzkie ciało potrzebuje do przeprowadzenia podstawowych procesów jak np. oddychanie. Wzory różnią się ze względu na płeć biologiczną.<br /><p></p>
+    <b>Ważne:</b> Spożywanie mniejszej ilości kalorii poważnie zagraża życiu lub zdrowiu!<br /><p></p>
+    Należy pamiętać, że uzyskana w ten sposób liczba kalorii jest <b>za mała</b> by dostarczyć organizmowi energii wystarczającej do poruszania się.
+    Dlatego w obliczeniach należy również uwzględnić naszą aktywność.<br />
+    W tym celu wykorzystuje się formułę Harrisa-Benedicta - wystarczy pomnożyć BMR przez współczynnik aktywności.
+    Uzyskany wynik to całkowite zapotrzebowanie kaloryczne TCN (Total Calorie Need)<br />
+<p></p>
+
+        <h4>Wzory</h4>
+        <u>Dla mężczyzn</u><br />
+        Minimalne zapotrzebowanie:<br />
+        BMR = 66.47 + (13.75 * waga [kg]) + (5.003 * wzrost [cm]) − (6.755 * wiek [lata])<br /><p></p>
+        Z uwzględnieniem aktywności:<br />
+        TCN = BMR * ćwiczenia = (66.47 + (13.75 * waga [kg]) + (5.003 * wzrost [cm]) − (6.755 * wiek [lata])) * ćwiczenia
+
+        <p></p>
+        <u>Dla kobiet</u><br />
+        Minimalne zapotrzebowanie:<br />
+        BMR = 655.1 + (9.563 * waga [kg]) + (1.85 * wzrost [cm]) − (4.676 * wiek [lata])<br /><p></p>
+        Z uwzględnieniem aktywności:<br />
+        TCN= BMR * ćwiczenia = (655.1 + (9.563 * waga [kg]) + (1.85 * wzrost [cm]) − (4.676 * wiek [lata])) * ćwiczenia
+
+<p></p>
+<h4>Współczynnik aktywności</h4>
+Brak/niewielka aktywność = 1.2<br />
+Lekka aktywność = 1.375<br />
+Średnia aktywność (3-5 dni w tygodniu) = 1.55<br />
+Duża aktywność (6-7 dni w tygodniu) = 1.725<br />
+Bardzo duża aktywność (praca fizyczna) = 1.9<br />
+</p>

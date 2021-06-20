@@ -1,0 +1,42 @@
+﻿@model dietiary.Models.Person
+
+@{
+    ViewData["Title"] = "Szczegóły - Twoje dane";
+}
+
+<h1>Szczegóły</h1>
+
+<div>
+    <h4>Twoje dane</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Wzrost:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Height)
+        </dd>
+        <dt class = "col-sm-2">
+            Waga:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+        <dt class = "col-sm-2">
+            Wiek:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+        <dt class = "col-sm-2">
+            Płeć biologiczna:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sex)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edytuj</a> |
+    <a asp-action="Index">Powrót</a>
+</div>
